@@ -22,39 +22,39 @@
       Half-Half, all devices
       <div class="row b-1 text-center">
         <p>
-          <!-- TODO learn out to use font awesome as trash cans seem to be the only things that work! -->
-          <div class="col-6 bg-primary"><i class="text-danger fa fa-trash"></i></div>
-          <div class="col-6 bg-secondary"><i class="text-danger fa fa-trash"></i></div>
+          <div class="col-6 bg-primary"><i class="fa fa-smile-o fa-3x"></i>a</div>
+          <div class="col-6 bg-secondary"><i class="fa fa-smile-o fa-3x"></i>b</div>
         </p>
       </div>
       Mobile full-screen, laptop Half-Half
       <div class="row">
         <p>
-          <div class="col-12 col-lg-6 bg-primary"><i class="text-danger fa fa-trash"></i></div>
-          <div class="col-12 col-lg-6 bg-secondary"><i class="text-danger fa fa-trash"></i></div>
+          <div class="col-12 col-lg-6 bg-primary"><i class="fa fa-smile-o fa-3x"></i>i</div>
+          <div class="col-12 col-lg-6 bg-secondary"><i class="fa fa-smile-o fa-3x"></i>ii</div>
         </p>
       </div>
       Mobile full, tablet Half, laptop Quarter
       <div class="row">
         <p>
-          <div class="col-12 col-md-6 order-1 col-lg-3 bg-primary">1<i class="text-danger fa fa-trash"></i></div>
-          <div class="col-12 col-md-6 order-2 col-lg-3 bg-secondary">2<i class="text-danger fa fa-trash"></i></div>
-          <div class="col-12 col-md-6 order-3 col-lg-3 bg-primary">3<i class="text-danger fa fa-trash"></i></div>
-          <div class="col-12 col-md-6 order-4 col-lg-3 bg-secondary">4<i class="text-danger fa fa-trash"></i></div>
+          <div class="col-12 col-md-6 order-1 col-lg-3 bg-primary">1<i class="fa fa-smile-o fa-3x"></i></div>
+          <div class="col-12 col-md-6 order-2 col-lg-3 bg-secondary">2<i class="fa fa-smile-o fa-3x"></i></div>
+          <div class="col-12 col-md-6 order-3 order-md-4 order-lg-3 col-lg-3 bg-primary">3<i class="fa fa-smile-o fa-3x"></i></div>
+          <div class="col-12 col-md-6 order-4 order-md-3 order-lg-4 col-lg-3 bg-secondary">4<i class="fa fa-smile-o fa-3x"></i></div>
         </p>
       </div>
       
       Nested Rows
-      <!-- TODO figure out why 1 is doubly tall -->
+      <!-- TODO figure out why 1 is doubly tall 
+        Is inline styling acceptable in this case? -->
       <div class="row">
-          <div class="col-3 bg-primary"><i class="text-danger fa fa-trash"></i>1</div>
+          <div class="col-3 bg-primary" style="height: 50%"><i class="fa fa-smile-o fa-3x"></i>1</div>
           <div class="col-9">
             <div class="row">
-              <div class="col-6 bg-secondary"><i class="text-danger fa fa-trash"></i>2</div>
-              <div class="col-6 bg-primary"><i class="text-danger fa fa-trash"></i>3</div>
+              <div class="col-6 bg-secondary bg-secondary"><i class="fa fa-smile-o fa-3x"></i>2</div>
+              <div class="col-6 bg-primary"><i class="fa fa-smile-o fa-3x"></i>3</div>
             </div>
             <div class="row">
-              <div class="col-12 bg-secondary"><i class="text-danger fa fa-trash"></i>4</div>
+              <div class="col-12 bg-secondary"><i class="fa fa-smile-o fa-3x"></i>4</div>
             </div>
           </div>
       </div>
@@ -102,7 +102,8 @@
             <img src="http://placehold.it/64x64" class="align-self-start mr-3" alt="...">
             <div class="media-body">
               <h5 class="mt-0">Top-aligned media</h5>
-              <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+              <hr>
+              <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimen fringilla. Donec lacinia congue felis in faucibus.</p>
             </div>
           </div>
         </div>
@@ -111,6 +112,7 @@
             <img src="http://placehold.it/64x64" class="align-self-start mr-3" alt="...">
             <div class="media-body">
               <h5 class="mt-0">Top-aligned media</h5>
+              <hr>
               <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
             </div>
           </div>
@@ -120,10 +122,25 @@
             <img src="http://placehold.it/64x64" class="align-self-start mr-3" alt="...">
             <div class="media-body">
               <h5 class="mt-0">Top-aligned media</h5>
+              <hr>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus cum ad debitis, atque temporibus impedit consequuntur facere consectetur sint fuga nam at deleniti.</p>
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="row bg-teal p-2 text-right">
+        <div class="col-4">
+          <button type="submit">Read More</button>
+        </div>
+        <div class="col-4">
+          <button type="submit">Read More</button>
+        </div>
+        <div class="col-4">
+          <button type="submit">Read More</button>
+        </div>
+      </div>
+
       </div>
       <div class="row p-3">
         <div class="col-4 m-auto">
@@ -133,7 +150,7 @@
               <h5 class="card-title">Special title treatment</h5>
               <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
               <!-- TODO move this buton to the right! -->
-              <a href="#" class="btn btn-primary">Go</a>
+              <a href="#" class="btn btn-primary text-right">Go</a>
             </div>
           </div>
         </div>
@@ -155,7 +172,7 @@
               <h5 class="card-title">Special title treatment</h5>
               <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
               <!-- TODO move this button to the right! -->
-              <a href="#" class="btn btn-primary d-flex justify-content-end align-items-end">Alphabet</a>
+              <a href="#" class="btn btn-primary d-flex justify-content-end align-items-end">Go</a>
             </div>
           </div>
         </div>
